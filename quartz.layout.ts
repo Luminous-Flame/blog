@@ -6,16 +6,13 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    provider: 'giscus',
-    options: {
-      // data-repo
-      repo: 'Luminous-Flame/blog',
-      // data-repo-id
-      repoId: 'R_kgDOPRbYIA',
-      // data-category
-      category: 'General',
-      // data-category-id
-      categoryId: 'DIC_kwDOPRbYIM4CtUsF',
+    Component.Comments({
+      provider: 'giscus',
+      options: {
+        repo: 'Luminous-Flame/blog',
+        repoId: 'R_kgDOPRbYIA',
+        category: 'General',
+        categoryId: 'DIC_kwDOPRbYIM4CtUsF',
       }
     }),
   ],
