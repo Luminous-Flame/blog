@@ -1,11 +1,11 @@
-# Wyrd
+# WY Console
 
-- Theme: Wyrd
-- Author: <a href="https://github.com/curio-heart" target="_blank" rel="noopener noreferrer">Curio Heart</a>
+- Theme: WY Console
+- Author: <a href="https://www.buymeacoffee.com/Satchelmouth" target="_blank" rel="noopener noreferrer">Satchelmouth</a>
 
 ## Preview
 
-[Open live preview](https://quartz-themes.github.io/wyrd/)
+[Open live preview](https://quartz-themes.github.io/wy-console/)
 
 ## Usage
 
@@ -13,7 +13,7 @@
 
 ```yaml
 env:
-  THEME_NAME: wyrd
+  THEME_NAME: wy-console
 ```
 
 ```yaml
@@ -26,7 +26,7 @@ env:
 ```bash
 curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
 
-./action.sh wyrd
+./action.sh wy-console
 ```
 
 ### Manual install
