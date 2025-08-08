@@ -213,3 +213,60 @@ p > img {
     display: none !important;
   }
 }
+
+figure[data-rehype-pretty-code-figure] {
+  background-color: #000;
+  color: #00ff00;
+  font-family: "Courier New", Consolas, monospace;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #333;
+  line-height: 1.5;
+  position: relative;
+  overflow-x: auto;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+/* 코드 타이틀 */
+figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+  background-color: #111;
+  color: #0f0;
+  border: none;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.85rem;
+  font-family: "Courier New", Consolas, monospace;
+  margin-bottom: -0.5rem;
+  border-radius: 4px 4px 0 0;
+}
+
+/* 코드 내용 영역 */
+figure[data-rehype-pretty-code-figure] pre {
+  background: none !important;
+  color: inherit !important;
+  font-family: inherit !important;
+  padding: 0;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* 코드 요소 기본 스타일 */
+code {
+  background: none !important;
+  color: inherit !important;
+  font-family: inherit !important;
+}
+
+/* 선택적으로 줄 번호 비활성화 */
+figure[data-rehype-pretty-code-figure] .line {
+  display: block;
+  padding-left: 0.5rem;
+  text-indent: -0.5rem;
+}
+
+/* 콘솔 스타일 효과: $ 프롬프트 추가하고 싶으면 여기에 */
+figure[data-rehype-pretty-code-figure].cmd-style .line::before {
+  content: "$ ";
+  color: #0f0;
+}
+
